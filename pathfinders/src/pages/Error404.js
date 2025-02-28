@@ -3,9 +3,9 @@ import '../css/Error404.css';
 
 const Error404 = () => {
     return (
-        <div className="Home">
-
+        <div className="error404">
+            <h1>Error 404: Page not Found</h1>
         </div>
     )
 }
-export default Home;
+export default Error404;

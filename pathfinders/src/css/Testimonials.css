@@ -1,0 +1,29 @@
+.testimonials {
+
+}
+.testimonials-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+}
+.testimonials-section p {
+    width: 25vw;
+    min-width: 300px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    font-size: 20px;
+    color: #424242;
+}
+
+@media (max-width: 700px) {
+    .testimonials-section p {
+        /* width: 400px; */
+    }
+}

@@ -1,0 +1,33 @@
+.ourteam {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+
+    margin: 0 auto;
+}
+.ourteam h1 {
+    font-size: 3.5vw;
+
+    margin: 0 0;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+
+    color: #bc9f6c;
+
+    user-select: none;
+}
+.team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    gap:4vw;
+}
+@media (max-width: 800px) {
+    .ourteam h1 {
+        font-size: 12vw;
+    }
+}
