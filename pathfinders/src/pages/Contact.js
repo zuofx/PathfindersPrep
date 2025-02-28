@@ -12,9 +12,9 @@ function Contact() {
     e.preventDefault();
 
     // Replace the following IDs with your own from EmailJS
-    const serviceID = 'service_82u1vkl';
-    const templateID = 'template_hr7yxm7';
-    const publicKey = 'NR_qOv4gSCZQDiM1w';
+    const serviceID = 'service_m84ounh';
+    const templateID = 'template_y2k6a4s';
+    const publicKey = 'B7IlTMU9FO5BelTSd';
 
     // Using the emailjs.sendForm method
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
