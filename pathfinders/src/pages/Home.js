@@ -24,9 +24,7 @@ const Home = () => {
             <div className='about'>
                 <h1>ABOUT US</h1>
                 <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Justo dolor orci nisl ultricies habitasse morbi libero taciti libero. Magna dui feugiat ex convallis feugiat; ultrices dapibus tincidunt! Varius posuere dolor eleifend mauris magna odio mauris. Pretium platea sed, rhoncus dui congue eget rhoncus laoreet. Interdum eu pellentesque quisque, ex aenean viverra.
-
-                    Sit torquent scelerisque tristique consectetur suscipit at, risus lectus. Risus molestie ac cursus molestie taciti commodo maximus vehicula. Sem sodales vehicula amet dapibus dapibus et, nullam vulputate. Quisque ipsum lorem imperdiet commodo hac aliquam vulputate. Dolor turpis eleifend habitasse montes metus. Facilisis dignissim posuere sem augue ad montes dapibus. Torquent odio suscipit posuere nunc suspendisse nibh tempus pellentesque nostra.
+                    At Pathfinders Prep, we believe that quality education should be accessible to everyone. That’s why we offer pay-what-you-can tutoring to support all students on their journey to academic and professional success. Our expert tutors provide personalized guidance for high-stakes exams, including the MCAT, LSAT, DAT, and CASPer, ensuring that financial barriers don’t stand in the way of your future. Whether you're aiming for medical school, law school, or dental school, we're here to help you navigate the path to success—no matter your circumstances.    
                 </p>
             </div>
 
@@ -66,7 +64,7 @@ const Home = () => {
         
             </div> */}
 
-            <div className='faqs'>
+            {/* <div className='faqs'>
                 <h1 className='faqs-title'>
                     FAQ:
                 </h1>
@@ -93,7 +91,7 @@ const Home = () => {
                     />
                 </div>
             </div>
-            
+             */}
             <div className='spacer'/>
         </div>
     )
