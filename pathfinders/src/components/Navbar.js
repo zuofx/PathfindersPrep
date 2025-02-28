@@ -62,7 +62,7 @@ const Navbar = () => {
                 <h1>PATHFINDERS PREP | </h1>
                 <a className="navlink" href="/home">HOME</a>
                 <a className="navlink" href="/ourteam">OUR TEAM</a>
-                <a className="navlink" href="/testimonials">SUCCESS STORIES</a>
+                {/* <a className="navlink" href="/testimonials">SUCCESS STORIES</a> */}
                 <a className="navlink" href="/contact">CONTACT</a>
             </div>
         )
