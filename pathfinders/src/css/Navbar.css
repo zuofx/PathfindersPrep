@@ -81,6 +81,18 @@
     height: 80vw;
     background-color: #f8f5ef;
 }
+
+.nav-title {
+    text-decoration: none;   /* remove underline */
+    color: inherit;          /* use same text color */
+    cursor: pointer;         /* show pointer on hover */
+  }
+  
+.nav-title h1 {
+      margin: 0;               /* reset any default spacing */
+}
+
+
 .navbar-navlinks {
     display: flex;
     flex-direction: column;

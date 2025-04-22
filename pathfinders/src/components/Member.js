@@ -1,29 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Member.css';
+import linkedinIcon from '../assets/linkedin.webp';
 
-// import headshot from '../assets/placeholder-headshot.jpg'
-import linkedin from '../assets/linkedin.webp'
+const Member = ({ name, filename, tag, link, expanded, toggleExpand }) => {
+  const [direction, setDirection] = useState('right');
 
-const Member = (props) => {
+  let headshot;
+  try {
+    headshot = require('../assets/' + filename);
+  } catch {
+    headshot = undefined;
+  }
 
-    let headshot = undefined;
-    try {
-        headshot = require('../assets/' + props.filename); 
-    }catch {
-        headshot = undefined;
+  const handleToggle = (e) => {
+    e.stopPropagation();
+    if (!expanded) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const panelWidth = rect.width;
+      const spaceRight = window.innerWidth - rect.right;
+      setDirection(spaceRight >= panelWidth ? 'right' : 'left');
     }
-    
+    toggleExpand();
+  };
 
-    return (
-        // <a className='member' href={props.link} target='_blank'>
-        <a className='member' href={props.link} target='_blank' rel='noopener noreferrer'>
-            <img src={headshot}/>
-            <h2>{props.name}</h2>
-            <a href={props.link} target='_blank'>
-                <img src={linkedin}/>
-                <h3>{props.tag}</h3>
-            </a>
+  return (
+    <div className="member-card" onClick={handleToggle}>
+      <div className="member-basic">
+        <img
+          src={headshot}
+          alt={`${name} headshot`}
+          className="member-photo"
+        />
+        <h2 className="member-name">{name}</h2>
+      </div>
+
+      <div
+        className={`member-details ${expanded ? `open open-${direction}` : ''}`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <p className="member-tag">{tag}</p>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <img src={linkedinIcon} alt="LinkedIn" className="linkedin-icon" />
         </a>
-    )
-}
+      </div>
+    </div>
+  );
+};
+
 export default Member;

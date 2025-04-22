@@ -5,6 +5,11 @@ import FAQBox from '../components/FAQBox';
 
 import logo512 from '../assets/logo512.png';
 
+import instagramIcon from '../assets/instagram.svg';
+import phoneIcon     from '../assets/phone.svg';
+import emailIcon     from '../assets/email.svg';
+
+
 const Home = () => {
     return (
         <div className="Home">
@@ -112,7 +117,57 @@ const Home = () => {
                 </div>
             </div>
              */}
-            <div className='spacer'/>
+
+            <div className='footer'>
+            <p className='footer-message'>
+                Feel free to contact us and book an initial consultation!
+            </p>
+            <div className='footer-contact-info'>
+                <div className='footer-contact-item'>
+                <img
+                    src={instagramIcon}
+                    alt='Instagram'
+                    className='footer-contact-icon'
+                />
+                <a
+                    href='https://www.instagram.com/pathfindersprep'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='footer-contact-text'
+                >
+                    @pathfindersprep
+                </a>
+                </div>
+                <div className='footer-contact-item'>
+                <img
+                    src={phoneIcon}
+                    alt='Phone'
+                    className='footer-contact-icon'
+                />
+                <a
+                    href='tel:+16474647064'
+                    className='footer-contact-text'
+                >
+                    +1 (647) 464‑7064
+                </a>
+                </div>
+                <div className='footer-contact-item'>
+                <img
+                    src={emailIcon}
+                    alt='Email'
+                    className='footer-contact-icon'
+                />
+                <a
+                    href='mailto:pathfindersprep@gmail.com'
+                    className='footer-contact-text'
+                >
+                    pathfindersprep@gmail.com
+                </a>
+                </div>
+            </div>
+            </div>
+
+
         </div>
     )
 }

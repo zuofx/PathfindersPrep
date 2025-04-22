@@ -3,6 +3,10 @@ import emailjs from 'emailjs-com';
 
 import '../css/Contact.css'
 
+import instagramIcon from '../assets/instagram.svg';
+import phoneIcon from '../assets/phone.svg';
+import emailIcon from '../assets/email.svg';
+
 function Contact() {
   // 1) Use useRef to get form data
   const form = useRef();
@@ -22,6 +26,7 @@ function Contact() {
         (result) => {
           console.log(result.text);
           alert('Message sent successfully!');
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -33,6 +38,43 @@ function Contact() {
   return (
     <div className='contact'>
       <h1>CONTACT US</h1>
+
+     <div className="contact-info">
+        <div className='contact-item'>
+          <img src={instagramIcon}
+                alt="Instagram Icon"
+                className="contact-svg-icon"
+          
+          />
+          <a
+            href="https://www.instagram.com/pathfindersprep"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-text"
+          >
+                @pathfindersprep
+          </a>
+        </div>
+        <div className='contact-item'>
+          <img src={phoneIcon}
+                alt="Phone Icon"
+                className="contact-svg-icon"
+          
+          />
+          <a href="tel:+16474647064" className="contact-text">+1 (647) 464-7064</a>
+        </div>
+        <div className='contact-item'>
+          <img src={emailIcon}
+                alt="Email Icon"
+                className="contact-svg-icon"
+          
+          />
+          <a href="mailto:pathfindersprep@gmail.com" className="contact-text">pathfindersprep@gmail.com</a>
+        </div>
+
+      </div>
+
+
       <form ref={form} onSubmit={sendEmail}>
         <label htmlFor="name">NAME:</label>
         <input

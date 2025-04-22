@@ -25,7 +25,7 @@
 .contact label {
     text-align: left;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.25vw;
     color: #424242;
 }
 .contact input {
@@ -33,6 +33,20 @@
     border-width: 0.2vw;
     border-radius: 6px;
     padding: 0.5vw;
+    font-size: 1vw;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;  /* space between icon and text */
+    margin-bottom: 0.1vw;
+  }
+
+.contact-svg-icon {
+    width: 3vw;
+    height: auto;
+    object-fit: contain;
 }
 .contact textarea {
     border-style: solid;
@@ -41,9 +55,17 @@
     padding: 0.5vw;
 
     height: 200px;
+    font-size: 1vw;
 
     resize: none;
 }
+
+.contact-text {
+    font-size: 1.8vw;
+    color: #bc9f6c;
+  }
+
+
 .contact button {
     border-style: solid;
     border-color: #bc9f6c;
@@ -69,4 +91,36 @@
     color: #bc9f6c;
 
     transition: 200ms ease;
+}
+
+.contact-info {
+    margin: 2vw auto;
+    /* stack items vertically and center each line */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* space between each line */
+  gap: 0.5vw;
+  
+  /* you can remove or shrink the fixed width */
+  width: auto;
+    width: 40vw;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0.5vw 0;
+    font-size: 1.8vw;
+    color:#424242;
+}
+
+.contact-info a {
+    color:#bc9f6c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }

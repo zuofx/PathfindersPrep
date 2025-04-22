@@ -101,6 +101,7 @@
     margin-bottom: 3vw;
     
     width: 60vw;
+    font-size: 1.5vw;
     
     color: #424242;
 }
@@ -225,6 +226,47 @@
     font-size: 20px;
     color: #424242;
 }
+
+/* Footer styling */
+.footer {
+    background-color: #f8f5ef;
+    padding: 2vw 0;
+  }
+  
+  .footer-message {
+    font-size: 2vw;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0 0 2vw;
+  }
+  
+  .footer-contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .footer-contact-icon {
+    width: 2vw;
+    height: auto;
+  }
+  
+  .footer-contact-text {
+    font-size: 1.8vw;
+    color: #2c2c2c;
+    text-decoration: none;
+  }
+  
+  .footer-contact-text:hover {
+    text-decoration: underline;
+  }
+  
 
 @media (max-width: 1080px) {
     .title {

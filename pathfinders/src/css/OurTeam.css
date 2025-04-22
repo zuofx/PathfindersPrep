@@ -1,9 +1,6 @@
 .ourteam {
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-
-    margin: 0 auto;
+  width: 100%;
+  padding: 2vw 40px;
 }
 .ourteam h1 {
     font-size: 3.5vw;
@@ -16,18 +13,86 @@
 
     user-select: none;
 }
+
 .team-members {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-
-    gap:3vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 520px);
+  gap: 50px;
+  justify-content: left;
+  justify-items: center;
 }
+
+.member-wrapper {
+  width: 260px;
+  transition: width 0.3s ease;
+}
+
+.member-wrapper.expanded {
+  width: 520px;
+}
+
+
 @media (max-width: 800px) {
-    .ourteam h1 {
-        font-size: 12vw;
-    }
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: stretch;
+  }
+  .member-wrapper,
+  .member-wrapper.expanded {
+    width: 100% !important;
+  }
 }
+
+
+/* Footer styling */
+.footer {
+  /* full‑width background */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* your existing styling */
+  background-color: #f8f5ef;
+  padding: 3vw 0;
+}
+  
+  .footer-message {
+    font-size: 2vw;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0 0 2vw;
+  }
+  
+  .footer-contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .footer-contact-icon {
+    width: 2vw;
+    height: auto;
+  }
+  
+  .footer-contact-text {
+    font-size: 1.8vw;
+    color: #2c2c2c;
+    text-decoration: none;
+  }
+  
+  .footer-contact-text:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 800px) {
+    .member-wrapper {
+      width: 40vw !important;
+    }
+  }
