@@ -33,18 +33,38 @@ const Home = () => {
                     SUBJECTS WE TEACH:
                 </h1>
                 <div className='courses'>
-                    <div className='course'>
-                        LSAT
-                    </div>
-                    <div className='course'>
-                        CASPER
-                    </div>
-                    <div className='course'>
-                        MCAT
-                    </div>
-                    <div className='course'>
-                        DAT
-                    </div>
+                    <a
+                      className='course'
+                      href='https://www.lsac.org/lsat'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      LSAT
+                    </a>
+                    <a
+                      className='course'
+                      href='https://takecasper.com'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      CASPER
+                    </a>
+                    <a
+                      className='course'
+                      href='https://students-residents.aamc.org/applying-medical-school/taking-mcat-exam'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      MCAT
+                    </a>
+                    <a
+                      className='course'
+                      href='https://www.ada.org/dat'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      DAT
+                    </a>
                 </div>
             </div>
 

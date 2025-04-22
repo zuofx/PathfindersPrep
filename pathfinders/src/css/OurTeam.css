@@ -24,7 +24,7 @@
     align-items: center;
 
 
-    gap:4vw;
+    gap:3vw;
 }
 @media (max-width: 800px) {
     .ourteam h1 {

@@ -15,7 +15,7 @@
     user-select: none;
 }
 .navbar h1 {
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 600;
     color: #2c2c2c;
 }
@@ -24,10 +24,12 @@
     width: 5vw;
 }
 .navlink {
+    flex: 1;
+    text-align: center;
     text-decoration: none;
     
     font-family: Forum;
-    font-size: 2vw;
+    font-size: 2.25vw;
     font-weight: 500;
 
     color: #2c2c2c;

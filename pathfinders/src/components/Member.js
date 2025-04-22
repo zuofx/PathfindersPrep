@@ -16,13 +16,11 @@ const Member = (props) => {
 
     return (
         // <a className='member' href={props.link} target='_blank'>
-        <a className='member'>
+        <a className='member' href={props.link} target='_blank' rel='noopener noreferrer'>
             <img src={headshot}/>
             <h2>{props.name}</h2>
-            
-            {/* <a href={props.link} target='_blank'> */}
-            <a>
-                {/* <img src={linkedin}/> */}
+            <a href={props.link} target='_blank'>
+                <img src={linkedin}/>
                 <h3>{props.tag}</h3>
             </a>
         </a>

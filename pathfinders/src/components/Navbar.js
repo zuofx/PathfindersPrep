@@ -59,7 +59,7 @@ const Navbar = () => {
                 <a href="/">
                     <img className='navlogo' src={Logo512Crop} alt="Logo"/>
                 </a>
-                <h1>PATHFINDERS PREP | </h1>
+                <h1>PATHFINDERS PREP  </h1>
                 <a className="navlink" href="/home">HOME</a>
                 <a className="navlink" href="/ourteam">OUR TEAM</a>
                 {/* <a className="navlink" href="/testimonials">SUCCESS STORIES</a> */}
