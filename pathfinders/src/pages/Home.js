@@ -89,34 +89,36 @@ const Home = () => {
         
             </div> */}
 
-            {/* <div className='faqs'>
+            <div className='faqs'>
                 <h1 className='faqs-title'>
                     FAQ:
                 </h1>
                 <div className='faq-boxes'>
                     <FAQBox
                     className='faq-box'
-                    question='This is a test question?'
-                    answer='This is a test answer.'
+                    question='What does “pay-what-you-can” mean?'
+                    answer='At Pathfinders Prep, we believe cost should never stand between you and success. You choose the amount you can afford per session—whether that’s our suggested minimum, full rate, or anything in between. We’ll never turn away a student for lack of funds.'
                     />
                     <FAQBox
                     className='faq-box'
-                    question='This is a test question?'
-                    answer='This is a test answer.'
+                    question='How do I book a session?'
+                    answer='Simply click “Become a Student” to complete a brief intake form. You’ll indicate your exam date, availability, and subject focus (e.g. MCAT Biology, LSAT Reading Comprehension). We’ll match you with a tutor and email you a link to schedule via our online calendar.
+
+'
                     />
                     <FAQBox
                     className='faq-box'
-                    question='This is a test question?'
-                    answer='This is a test answer.'
+                    question='What if I need to reschedule or cancel?'
+                    answer='Life happens! You can reschedule or cancel up to 24 hours before your session without penalty. Cancellations within 24 hours incur a small fee, but we’ll always work with you in emergencies—just reach out as soon as possible.'
                     />
                     <FAQBox
                     className='faq-box'
-                    question='This is a longer test question?'
-                    answer='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    question='Who will be tutoring me?'
+                    answer='Every tutor is a high-achieving student who has aced their exam. Before your first session, you’ll receive a brief bio outlining their credentials, teaching style, and areas of expertise so you can feel confident in your match.'
                     />
                 </div>
             </div>
-             */}
+            
 
             <div className='footer'>
             <p className='footer-message'>

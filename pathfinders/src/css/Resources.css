@@ -1,0 +1,53 @@
+.resources-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4vw 2vw;
+  }
+  .resources-page h1 {
+    font-size: 3vw;
+    text-align: center;
+    color: #bc9f6c;
+    margin-bottom: 2vw;
+  }
+  .resource-section {
+    margin-bottom: 3vw;
+  }
+  .resource-section h2 {
+    font-size: 2.5vw;
+    color: #2c2c2c;
+    margin-bottom: 1vw;
+  }
+  .resource-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5vw;
+  }
+  .resource-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #bc9f6c;
+    color: #fffcf7;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    transition: 200ms ease;
+  }
+  .resource-button:hover {
+    background-color: #fffcf7;
+    color: #bc9f6c;
+  }
+  
+  @media (max-width: 600px) {
+    .resource-buttons {
+      grid-template-columns: 1fr;
+    }
+    .resource-button {
+      width: 100%;
+      font-size: 4vw;
+      padding: 2vw;
+    }
+  }
+  

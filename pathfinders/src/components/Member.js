@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/Member.css';
 import linkedinIcon from '../assets/linkedin.webp';
 
-const Member = ({ name, filename, tag, link, expanded, toggleExpand }) => {
+const Member = ({ name, filename, tag, link, objectPosition, expanded, toggleExpand }) => {
   const [direction, setDirection] = useState('right');
 
   let headshot;
@@ -30,6 +30,7 @@ const Member = ({ name, filename, tag, link, expanded, toggleExpand }) => {
           src={headshot}
           alt={`${name} headshot`}
           className="member-photo"
+          style={{ objectPosition }}
         />
         <h2 className="member-name">{name}</h2>
       </div>

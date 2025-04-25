@@ -1,6 +1,6 @@
 .ourteam {
   width: 100%;
-  padding: 2vw 40px;
+  padding: 2vw;
 }
 .ourteam h1 {
     font-size: 3.5vw;
@@ -17,24 +17,24 @@
 .team-members {
   display: grid;
   grid-template-columns: repeat(auto-fit, 520px);
-  gap: 50px;
+  gap: 3vw;
   justify-content: left;
   justify-items: center;
 }
 
 .member-wrapper {
-  width: 260px;
+  width: 14vw;
   transition: width 0.3s ease;
 }
 
 .member-wrapper.expanded {
-  width: 520px;
+  width: 28vw;
 }
 
 
 @media (max-width: 800px) {
   .team-members {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     justify-items: stretch;
   }
   .member-wrapper,
@@ -46,17 +46,13 @@
 
 /* Footer styling */
 .footer {
-  /* full‑width background */
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-
-  /* your existing styling */
+  /* Expand by container padding (2vw on each side) */
+  width: calc(100% + 4vw);
+  /* Offset left/right by negative padding */
+  margin: 3vw -2vw 0;
   background-color: #f8f5ef;
   padding: 3vw 0;
 }
-  
   .footer-message {
     font-size: 2vw;
     color: #2c2c2c;
@@ -91,8 +87,4 @@
     text-decoration: underline;
   }
   
-  @media (max-width: 800px) {
-    .member-wrapper {
-      width: 40vw !important;
-    }
-  }
+  @media (max-width:800px) { .team-members { grid-template-columns: repeat(auto-fit, minmax(40vw,1fr)); justify-items:stretch; } .member-wrapper, .member-wrapper.expanded { width:100% !important; } .footer { width:100%; left:0; transform:none; } }

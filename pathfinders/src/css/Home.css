@@ -13,6 +13,18 @@
     background-size: cover;
 
     user-select: none;
+    background: linear-gradient(
+      rgba(7, 7, 7, 0.3),
+      rgba(7, 7, 7, 0.3)
+    ),
+        url(../assets/home-title.jpg) center center;
+    background-size: cover;
+
+    /* NEW: parallax effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* ensures it fills the viewport height */
+    min-height: 90vh;
 }
 
 .title-text {

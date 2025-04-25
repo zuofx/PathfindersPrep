@@ -13,6 +13,8 @@ import Error404 from './pages/Error404.js';
 import OurTeam from './pages/OurTeam.js';
 import Testimonials from './pages/Testimonials.js';
 import Contact from './pages/Contact.js';
+import Resources from './pages/Resources.js';
+
 
 // Components
 import Navbar from './components/Navbar.js';
@@ -29,6 +31,7 @@ function App() {
           <Route path="/ourteam" element={<OurTeam />} />
           {/* <Route path="/testimonials" element={<Testimonials />} /> */}
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

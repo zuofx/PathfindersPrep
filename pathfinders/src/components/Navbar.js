@@ -46,6 +46,7 @@ const Navbar = () => {
                         <a className="min-navlink" href="/ourteam">OUR TEAM</a>
                         {/* TODO: enable later */}
                         {/* <a className="min-navlink" href="/testimonials">SUCCESS STORIES</a> */}
+                        <a className="min-navlink" href="/resources">RESOURCES</a>
                         <a className="min-navlink" href="/contact">CONTACT</a>
                         <a className="min-navlink" onClick={() => {setOpen(false)}}>X</a>
                     </div>
@@ -65,6 +66,7 @@ const Navbar = () => {
                 <a className="navlink" href="/home">HOME</a>
                 <a className="navlink" href="/ourteam">OUR TEAM</a>
                 {/* <a className="navlink" href="/testimonials">SUCCESS STORIES</a> */}
+                <a className="navlink" href="/resources">RESOURCES</a>
                 <a className="navlink" href="/contact">CONTACT</a>
             </div>
         )
