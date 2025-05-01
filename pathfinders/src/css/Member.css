@@ -108,6 +108,12 @@
       width: 55vw !important;
       padding: 5vw !important;
       font-size: 5vw !important;
+      /* allow normal wrapping of text */
+      white-space: normal;
+      /* break long words or URLs */
+      word-break: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
     }
   
     /* Make the slide‐out always position to the right */

@@ -14,8 +14,8 @@ const teamData = [
   { name: 'Nathan Lai',  filename: 'nathan-lai.jpg',    tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>MCAT</strong>: 517 (94th Percentile)<br/> <strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/nathan-lai-20b37a280/', objectPosition: "0% 20%"  },
   { name: 'Grace Kim',   filename: 'grace-kim.jpg',     tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/grace-kim-357362264/', objectPosition: "0% 5%"  },
   { name: 'Julie Choi',  filename: 'julie-choi.png',    tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/julie-choi-383846270/', objectPosition: "0% 10%"  },
-  { name: 'Ethan Ko',    filename: 'ethan-ko.jpg',      tag: (<><strong>Program: </strong>McMaster Integrated Biomedical Engineering and Health Sciences<br/> <strong>DAT Prep</strong></>), link: 'https://www.linkedin.com/in/ethan--ko/' },
-  { name: 'Dylan Kwan',  filename: 'dylan-kwan.jpg',    tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>MCAT</strong>: 514 (90th Percentile)<br/> <strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/dylankwann/' },
+  { name: 'Ethan Ko',    filename: 'ethan-ko.jpg',      tag: (<><strong>Program: </strong>McMaster iBioMed<br/> <strong>DAT Prep</strong></>), link: 'https://www.linkedin.com/in/ethan--ko/' },
+  { name: 'Dylan Kwan',  filename: 'dylan-kwan.jpg',    tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/dylankwann/' },
   { name: 'Sarah Karami',filename: 'sarah-karami.jpg', tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>DAT</strong>: (99.7th Percentile)</>), link: 'https://www.linkedin.com/in/sarah-karami-4b3143220/' },
   { name: 'Daniel Wang', filename: 'daniel-wang.jpg',  tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: '/' },
 ];
