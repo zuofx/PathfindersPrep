@@ -79,7 +79,7 @@ const OurTeam = () => {
                                 alt='Email'
                                 className='footer-contact-icon'
                             />
-            <a href="mailto:pathfindersprep@gmail.com" className="footer-contact-text">pathfindersprep@gmail.com</a>
+            <a href="mailto:pathfindersprep@gmail.com" className="footer-contact-text">ops.pathfindersprep@gmail.com</a>
           </div>
         </div>
       </div>

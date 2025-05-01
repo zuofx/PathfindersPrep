@@ -175,7 +175,7 @@ const Home = () => {
                     href='mailto:pathfindersprep@gmail.com'
                     className='footer-contact-text'
                 >
-                    pathfindersprep@gmail.com
+                    ops.pathfindersprep@gmail.com
                 </a>
                 </div>
             </div>

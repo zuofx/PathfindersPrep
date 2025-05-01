@@ -69,7 +69,7 @@ function Contact() {
                 className="contact-svg-icon"
           
           />
-          <a href="mailto:pathfindersprep@gmail.com" className="contact-text">pathfindersprep@gmail.com</a>
+          <a href="mailto:ops.pathfindersprep@gmail.com" className="contact-text">ops.pathfindersprep@gmail.com</a>
         </div>
 
       </div>
