@@ -12,3 +12,14 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
+
+  @media (max-width: 600px) {
+    .typewriter-text {
+      font-size: 8vw;       /* scale the typed text down/up */
+      line-height: 1.2;
+    }
+    .cursor {
+      width: 3vw;           /* ensure cursor remains visible */
+      height: 8vw;
+    }
+  }

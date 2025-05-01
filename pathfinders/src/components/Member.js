@@ -15,10 +15,15 @@ const Member = ({ name, filename, tag, link, objectPosition, expanded, toggleExp
   const handleToggle = (e) => {
     e.stopPropagation();
     if (!expanded) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const panelWidth = rect.width;
-      const spaceRight = window.innerWidth - rect.right;
-      setDirection(spaceRight >= panelWidth ? 'right' : 'left');
+      // on narrow screens, always open to the right
+      if (window.innerWidth <= 600) {
+        setDirection('right');
+      } else {
+        const rect        = e.currentTarget.getBoundingClientRect();
+        const panelWidth  = rect.width;
+        const spaceRight  = window.innerWidth - rect.right;
+        setDirection(spaceRight >= panelWidth ? 'right' : 'left');
+      }
     }
     toggleExpand();
   };

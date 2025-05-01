@@ -59,29 +59,18 @@
     text-align: left;
 }
 
-@media (max-width: 800px) {
-    .question-box {
-        width: 50vw;
-        font-size: 3vw;
-        border-radius: 1vw;
-
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+@media (max-width: 600px) {
+    /* Force the question text larger than the answer */
+    .faq-boxes .question-box {
+      font-size: 5.5vw !important;
+      padding: 2vw !important;
     }
-    .answer-box {
-        width: 50vw;
-        font-size: 3vw;
-        border-radius: 0vw;
-        border-bottom-right-radius: 1vw;
-        border-bottom-left-radius: 1vw;
-
-        transform: translateY(-1vw);
-
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-top: 1.5vw;
-        padding-bottom: 1vw;
+    .faq-boxes .question-box h1 {
+      font-size: inherit;   /* in case you’re setting font-size on the <h1> itself */
     }
-}
+  
+    /* The answer remains as you defined before */
+    .faq-boxes .answer-box {
+      font-size: 4.5vw !important;
+    }
+  }

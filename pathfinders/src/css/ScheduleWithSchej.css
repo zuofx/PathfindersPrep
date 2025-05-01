@@ -43,10 +43,23 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .schedule-form-page {
+    padding: 6vw 4vw;
+  }
+  .schedule-form-page h1 {
+    font-size: 8vw;       /* larger heading on phone */
+    margin-bottom: 4vw;
+  }
+  .schedule-form label {
+    font-size: 6vw;       /* easier to read labels */
+  }
   .schedule-form input,
   .schedule-form select,
   .schedule-form button {
-    font-size: 4vw;
+    font-size: 5vw;       /* bigger tappable targets */
     padding: 3vw;
+  }
+  .schedule-form button {
+    margin-top: 6vw;
   }
 }

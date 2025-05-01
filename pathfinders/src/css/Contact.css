@@ -124,3 +124,41 @@
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+/* Adjust form width & text for mobile */
+@media (max-width: 600px) {
+    .contact h1 {
+      font-size: 10vw;
+      margin-bottom: 6vw;
+    }
+    .contact-info {
+      width: 80vw;
+      gap: 2vw;
+      margin-bottom: 4vw;
+    }
+    .contact-svg-icon {
+      width: 8vw;
+    }
+    .contact-text {
+      font-size: 6vw;
+    }
+    .contact form {
+      width: 90vw;
+      gap: 3vw;
+    }
+    .contact label {
+      font-size: 6vw;
+    }
+    .contact input,
+    .contact textarea {
+      font-size: 4vw;
+      padding: 3vw;
+    }
+    .contact button {
+      width: 100%;
+      font-size: 5vw;
+      padding: 4vw;
+      align-self: center;
+    }
+  }
+  

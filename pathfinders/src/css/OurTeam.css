@@ -87,4 +87,35 @@
     text-decoration: underline;
   }
   
-  @media (max-width:800px) { .team-members { grid-template-columns: repeat(auto-fit, minmax(40vw,1fr)); justify-items:stretch; } .member-wrapper, .member-wrapper.expanded { width:100% !important; } .footer { width:100%; left:0; transform:none; } }
+  @media (max-width: 600px) {
+    .ourteam {
+      padding: 4vw 2vw;
+    }
+    .ourteam h1 {
+      font-size: 8vw;
+      margin-bottom: 4vw;
+    }
+    .team-members {
+      display: flex;
+      flex-direction: column;
+      gap: 4vw;
+    }
+    .member-wrapper,
+    .member-wrapper.expanded {
+      width: 100% !important;
+    }
+    .footer {
+      margin: 2vw 0 0;
+      width: 100%;
+      padding: 4vw 2vw;
+    }
+    .footer-message {
+      font-size: 5vw;
+    }
+    .footer-contact-text {
+      font-size: 4vw;
+    }
+    .footer-contact-icon {
+      width: 6vw;
+    }
+  }

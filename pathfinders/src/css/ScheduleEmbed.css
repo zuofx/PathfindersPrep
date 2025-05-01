@@ -6,4 +6,11 @@
     border: none;
   }
   
-  
+@media (max-width: 600px) {
+  .schej-embed-page {
+    padding: 2vw;
+  }
+  .schej-embed-container iframe {
+    height: 500px; /* shrink for mobile */
+  }
+}

@@ -39,15 +39,26 @@
     background-color: #fffcf7;
     color: #bc9f6c;
   }
-  
+ 
   @media (max-width: 600px) {
+    .resources-page {
+      padding: 6vw 4vw;
+    }
+    .resources-page h1 {
+      font-size: 10vw;
+      margin-bottom: 6vw;
+    }
+    .resource-section h2 {
+      font-size: 10vw;
+      margin-bottom: 4vw;
+    }
     .resource-buttons {
       grid-template-columns: 1fr;
+      gap: 4vw;
     }
     .resource-button {
-      width: 100%;
-      font-size: 4vw;
-      padding: 2vw;
+      font-size: 7vw;
+      padding: 3vw;
     }
   }
   

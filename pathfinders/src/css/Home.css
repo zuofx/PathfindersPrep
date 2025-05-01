@@ -300,48 +300,92 @@
 }
 
 @media (max-width: 600px) {
-    .title {
-        height: 100vw;
-    }
-    .title-text img {
-        width: 42vw;
-    }
-    .title-text h2 {
-        font-size: 5vw;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
-    }
-    .title-buttons {
-        flex-direction: column;
-    }
-    .title-buttons a {
-        width: 35vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        font-size: 4vw;
 
-        border-width: 0.7vw;
-    }
-    .about h1 {
-        font-size: 10vw;
-        margin-top: 10vw;
-        margin-bottom: 8vw;
-    }
-    .faqs-title {
-        font-size: 10vw;
-        margin-top: 10vw;
-        margin-bottom: 8vw;
-    }
-    .testimonials h1 {
-        font-size: 10vw;
-        margin-top: 10vw;
-        margin-bottom: 8vw;
-    }
-    .subjects h1 {
-        font-size: 10vw;
-        margin-top: 10vw;
-        margin-bottom: 8vw;
-    }
+  /* Hero typewriter: wrap & scale */
+  .title-text .typewriter-text {
+    font-size: 12vw !important;       /* big enough to read */
+    max-width: 90vw;                 /* force wrap */
+    white-space: pre-wrap;           /* allow multi-line */
+    text-align: center;
+    margin: 0 auto 4vw;
+  }
+
+  /* Buttons: stack & full-width */
+  .title-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+  }
+  .title-buttons a {
+    width: 80vw !important;
+    padding: 3vw !important;
+    font-size: 7vw !important;
+    margin: 0;
+  }
+
+  /* FAQ */
+  .faqs-title {
+    font-size: 8vw;
+    margin: 4vw 0 2vw;
+  }
+  .faq-boxes .question-box {
+    width: 90vw;
+    font-size: 5.5vw;
+    padding: 2vw !important;
+  }
+  .faq-boxes .answer-box {
+    width: 90vw;
+    font-size: 4.5vw;
+    padding: 3vw !important;
+    transform: translateY(-2vw) !important;
+  }
+
+  /* Footer on Home (contact info) */
+  .footer {
+    width: 100%;
+    padding: 4vw 2vw;
+    box-sizing: border-box;
+  }
+  .footer-message {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+  .footer-contact-info {
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+  }
+  .footer-contact-item {
+    gap: 2vw;
+  }
+  .footer-contact-icon {
+    width: 8vw;
+  }
+  .footer-contact-text {
+    font-size: 4vw;
+  }
+  .about h1 {
+    font-size: 8vw;
+    margin: 4vw 0 2vw;
+  }
+  .about p {
+    font-size: 4.5vw;
+    line-height: 1.6;
+    width: 90vw;
+    margin: 0 auto 4vw;
+  }
+  /* SUBJECTS */
+  .subjects h1 {
+    font-size: 8vw;
+    margin: 4vw 0 2vw;
+  }
+  .courses {
+    gap: 3vw;
+  }
+  .courses .course {
+    font-size: 5.5vw;
+    padding: 2vw 4vw;
+  }
 }
 
 .spacer {
