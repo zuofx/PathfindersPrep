@@ -1,0 +1,52 @@
+.schedule-form-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4vw 2vw;
+  text-align: center;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+h1 {
+  font-size: 2vw;
+}
+.schedule-form label {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.schedule-form input,
+.schedule-form select,
+.schedule-form button {
+  width: 100%;
+  padding: 1vw;
+  font-size: 1.6vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.5vw;
+}
+
+.schedule-form button {
+  background: #bc9f6c;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2vw;
+}
+
+.schedule-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .schedule-form input,
+  .schedule-form select,
+  .schedule-form button {
+    font-size: 4vw;
+    padding: 3vw;
+  }
+}

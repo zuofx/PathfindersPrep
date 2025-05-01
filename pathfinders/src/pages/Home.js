@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../css/Home.css';
 
+import Typewriter from '../components/Typewriter';
 import FAQBox from '../components/FAQBox';
 
 import logo512 from '../assets/logo512.png';
@@ -17,10 +18,18 @@ const Home = () => {
                 <div className='title-text'>
                     {/* <img src={logo512   }/> */}
                     {/* <h1>Welcome</h1> */}
-                    <h2>PREPARE YOUR FUTURE WITH US</h2>
+                    <Typewriter
+                        texts={[
+                        'PREPARE YOUR FUTURE WITH US',
+                        'PREPARE WITH PATHFINDERS PREP'
+                        ]}
+                        typingSpeed={120}
+                        deletingSpeed={60}
+                        pause={3000}
+                    />
                     <div className="title-buttons">
-                        <a href="/contact" target="_blank">BECOME A STUDENT</a>
-                        <a href="/contact" target="_blank">BECOME A TUTOR</a>
+                        <a href="/schedule" target="_blank">BECOME A STUDENT</a>
+                        <a href="/tutor" target="_blank">BECOME A TUTOR</a>
                     </div>
                 </div>
             </div>
@@ -102,9 +111,7 @@ const Home = () => {
                     <FAQBox
                     className='faq-box'
                     question='How do I book a session?'
-                    answer='Simply click “Become a Student” to complete a brief intake form. You’ll indicate your exam date, availability, and subject focus (e.g. MCAT Biology, LSAT Reading Comprehension). We’ll match you with a tutor and email you a link to schedule via our online calendar.
-
-'
+                    answer='Simply click “Become a Student” to complete a brief intake form. You’ll indicate your exam date, availability, and subject focus (e.g. MCAT Biology, LSAT Reading Comprehension). We’ll match you with a tutor and email you a link to schedule via our online calendar.'
                     />
                     <FAQBox
                     className='faq-box'
@@ -116,13 +123,18 @@ const Home = () => {
                     question='Who will be tutoring me?'
                     answer='Every tutor is a high-achieving student who has aced their exam. Before your first session, you’ll receive a brief bio outlining their credentials, teaching style, and areas of expertise so you can feel confident in your match.'
                     />
+                    <FAQBox
+                    className='faq-box'
+                    question='How do I make a payment?'
+                    answer='Based on the payment schedule that our tutors will discuss with you in your first session, you will be asked to e-transfer the amount agreed upon to ops.pathfindersprep@gmail.com.'
+                    />
                 </div>
             </div>
             
 
             <div className='footer'>
             <p className='footer-message'>
-                Feel free to contact us and book an initial consultation!
+                Feel free to contact us with any inquiries that you have!
             </p>
             <div className='footer-contact-info'>
                 <div className='footer-contact-item'>

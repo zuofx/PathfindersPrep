@@ -1,0 +1,60 @@
+.become-tutor {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2vw 2vw;
+  }
+  .become-tutor h1 {
+    text-align: center;
+    color: #bc9f6c;
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+  .become-tutor form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    font-size: 2vw;
+  }
+  .become-tutor label {
+    font-weight: bold;
+  }
+  .become-tutor input,
+  .become-tutor select,
+  .become-tutor textarea {
+    padding: 1vw;
+    font-size: 1.6vw;
+    border: 0.1vw solid #ccc;
+    border-radius: 0.5vw;
+  }
+  .become-tutor textarea {
+    resize: vertical;
+  }
+  .become-tutor button {
+    margin-top: 2vw;
+    padding: 1vw;
+    font-size: 1.6vw;
+    background: #bc9f6c;
+    color: #fff;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  .become-tutor button:hover {
+    opacity: 0.9;
+  }
+  .become-tutor button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    .become-tutor input,
+    .become-tutor select,
+    .become-tutor textarea,
+    .become-tutor button {
+      font-size: 4vw;
+      padding: 3vw;
+    }
+  }
+  

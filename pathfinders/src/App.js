@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,6 +15,10 @@ import OurTeam from './pages/OurTeam.js';
 import Testimonials from './pages/Testimonials.js';
 import Contact from './pages/Contact.js';
 import Resources from './pages/Resources.js';
+import ScheduleWithSchej from './pages/ScheduleWithSchej';
+import ScheduleEmbed from './pages/ScheduleEmbed';
+import BecomeTutor from './pages/BecomeTutor';
+
 
 
 // Components
@@ -32,6 +37,9 @@ function App() {
           {/* <Route path="/testimonials" element={<Testimonials />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/schedule" element={<ScheduleWithSchej />} />
+          <Route path="/schedule/:exam" element={<ScheduleEmbed />} />
+          <Route path="/tutor" element={<BecomeTutor />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

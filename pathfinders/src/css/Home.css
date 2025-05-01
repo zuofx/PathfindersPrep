@@ -32,7 +32,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    position: relative;
+    height: 100%;
     
 }
 .title-text h1 {
@@ -44,6 +45,10 @@
     margin: 0 0;
     font-size: 4vw;
     color: #fffcf7;
+}
+
+.typewriter-text {
+    font-size: 4vw;
 }
 .title-text img {
     width: 16vw;
