@@ -106,7 +106,7 @@ const Home = () => {
                     <FAQBox
                     className='faq-box'
                     question='What does “pay-what-you-can” mean?'
-                    answer='At Pathfinders Prep, we believe cost should never stand between you and success. You choose the amount you can afford per session—whether that’s our suggested minimum, full rate, or anything in between. We’ll never turn away a student for lack of funds.'
+                    answer='At Pathfinders Prep, we believe cost should never stand between you and success. This means that you have full control over the amount you choose to pay per session. We’ll never turn away a student for lack of funds.'
                     />
                     <FAQBox
                     className='faq-box'

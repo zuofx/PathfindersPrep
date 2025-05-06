@@ -16,8 +16,6 @@ const teamData = [
   { name: 'Julie Choi',  filename: 'julie-choi.png',    tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/julie-choi-383846270/', objectPosition: "0% 10%"  },
   { name: 'Ethan Ko',    filename: 'ethan-ko.jpg',      tag: (<><strong>Program: </strong>McMaster iBioMed<br/> <strong>DAT Prep</strong></>), link: 'https://www.linkedin.com/in/ethan--ko/' },
   { name: 'Dylan Kwan',  filename: 'dylan-kwan.jpg',    tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: 'https://www.linkedin.com/in/dylankwann/' },
-  { name: 'Sarah Karami',filename: 'sarah-karami.jpg', tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>DAT</strong>: (99.7th Percentile)</>), link: 'https://www.linkedin.com/in/sarah-karami-4b3143220/' },
-  { name: 'Daniel Wang', filename: 'daniel-wang.jpg',  tag: (<><strong>Program: </strong>Queen's Health Sciences <br/><strong>CASPER</strong>: 4th Quartile</>), link: '/' },
 ];
 
 const OurTeam = () => {
